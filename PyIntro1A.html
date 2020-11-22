@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<style type="text/css">
+			BODY {
+			  padding:0px;
+			  margin:7px;
+			  color:black;
+			  }
+
+			/* Списки */
+
+			ul {
+			  margin-top:0px;
+			  margin-right:0px;
+			  margin-bottom:0px;
+			  margin-left:19px;
+			  padding-left:0px; /* Mozilla устанавливает это значение в 20px */
+			  list-style-type:square;}
+
+			li {
+			  margin-top:0px;
+			  margin-right:0px;
+			  margin-bottom:0px;}
+
+			ol {
+			  margin-top:0px;
+			  margin-right:0px;
+			  margin-bottom:0px;}
+
+			/* Никогда не были нужны рамки рисунков. */
+			img {
+			  border:none;}
+
+			p {
+			  text-align:justify;
+			  x-text-indent:16pt;  /* Решено обойтись без отступов. */
+			  margin:0px 0px 15px 0px;
+			  padding:0px;}
+
+
+			/* Блок с каким-то связным содержанием */
+			div.content_block {
+			  width:100%;
+			  margin:0px auto 10px auto;
+			  
+			  padding:10px;
+			  border:2px solid #8000FF;
+			  background:white;}
+
+			/* Это рассчитано на использование совместно с 
+			   DIV.CONTENT_BLOCK. Тоесть должно стоять перед блоками. */
+			h1 {
+			  font:bold 20pt Georgia,Garamond,'Times New Roman',Times,serif;
+			  text-align:center;
+			  background:white;
+			  
+			  color:#8000FF; /* darkblue; */
+			  x-color:white;
+			  x-background:#8000FF;
+			  
+			  margin:0px auto 10px auto;
+			  padding:1px 10px 3px 10px;
+			  border:2px solid #8000FF;}
+
+			/* Это должно стоять в начале блока DIV.CONTENT_BLOCK. Как
+			   раз для этого бордюрчик и сделан. */
+			h2 {
+			  font:bold 17pt Georgia,Garamond,'Times New Roman',Times,serif;
+			  text-align:left;
+			  color:#8000FF;
+			  margin:0px 0px 10px 0px;
+			  border-bottom:2px solid #8000FF;}
+
+			h3 {
+			  font:bold 14pt Georgia,Garamond,'Times New Roman',Times,serif;
+			  text-align:left;
+			  color:#8000FF; /* darkblue; */
+			  margin:0px 0px 10px 0px;}
+
+			pre {
+			  margin:0px 0px 15px 0px;
+			  padding:0px;}
+
+
+			hr {
+			  border:1px solid #8000FF;}
+
+			/* Выравнивание в таблицах */
+			tbody {
+				vertical-align:top;}
+			tfoot {
+				vertical-align:top;}
+			thead {
+				vertical-align:top;}
+			tr {vertical-align:top;}
+			td {vertical-align:top;}
+			th {vertical-align:top;}
+
+			/*********************
+			* Динамическая ширина. 
+			* TODO: Разобраться с аватарками - там фиксированная ширина.
+			*********************/
+			div.content_block, h1 {
+			  width:auto;
+			  margin:0px 5px 10px 5px;
+			  }
+
+
+			/* Зелёная схема. */
+			body {
+			  background:#D9FFDF url("./__style/background.png");}
+			h1 {
+			  border-color:#008000;
+			  color:#008000;}
+			h2 {
+			  color:#008000;
+			  border-bottom-color:#008000;}
+			h3 {
+			  color:#008000;}
+			div.content_block {
+			  border-color:#008000;
+			  background:white;}
+
+			a:link {
+			  color:#3A7807;}
+			a:visited {
+			  color:#3A7807;}
+			a:active {
+			  color:#3A7807;}
+			a:hover {
+			  color:#3A7807;}
+
+			hr {
+				border-color:#3A7807;}
+
+			body, div, p, table {
+				font-size:10pt;
+				font-family:Verdana;
+			}
+
+		img{border:none}
+		
+		</style>
+		
+	</head>
+<body>
+
+<div class="content_block">
+<h2>Introduction to Python</h2>
+<br/>
+In this semester we would start learning Python for handling Physics Problems. In our labs, we begin our interaction with python by drawing simple figures using its built-in <b>turtle</b> module.  You do not need to install  anything to begin learning Python: just visit this <a href="https://repl.it/languages/python_turtle">web-site</a> to follow on.<br/>
+<br/>
+If you have correctly landed on this site, you would find something like the follwing figure:<br/>
+<br/>
+<div align="center"><a href="PyIntro1A/repl.png"><img src="PyIntro1A/__thumb/th_width_500_repl.png"/></a></div><br/>
+<br/>
+In this website you would type code in the left panel. After writing the code, press the <font color="green"> green </font> <b>run</b> button and graphics output would appear in the top right graphics window, and command outputs will appear in the bottom right console. Before running a new piece of code 
+<ol>
+<li>Erase the earlier code segment,</li>
+<li>type the new one and,</li>
+<li>press the green button again.</li>
+</ol>
+<h3>Iteration </h3>
+<br/>
+Computers never tire (at least they have not complained, so far, but have been known to burn out due to  excessive game playing) about repeating something they have been instructed to. A repetition becomes an iteration when it improves or builds up something over the initial iterates  <br/>
+<br/>
+Let us start our day by drawing a square on the screen. Type the following piece of code (do not copy-paste anything as long we do not tell you to) and click on the green run button at the top of the graphics window.<br/>
+<br/>
+<div align="center"><img src="PyIntro1A/nofor.jpg"/></div><br/>
+<br/>
+<a href="page://__813192cc-8f8d-4468-b845-75f95d40e4f0/#nofor">src</a><br/>
+<br/>
+<b>Assignment:</b> Ensure that you have typed, executed and obtained the same results as outlined in the text ; this is absolutely essential. Then attempt Assignment 1 (look under this node for numbered assignments)<br/>
+<br/>
+To draw a square, the turtle has to repeat four times the following actions:<br/>
+<ul>
+<li>advance by 50 steps</li>
+<li>turn right (no advancement)</li>
+</ul>
+But surely one can do better than copying and pasting two lines four times over!. A for loop can handle the same thing much more gracefully:<br/>
+<br/>
+<div align="center"><img src="PyIntro1A/withfor2.jpg"/></div><br/>
+<br/>
+<a href="page://__813192cc-8f8d-4468-b845-75f95d40e4f0/#withfor2">src</a><br/>
+<br/>
+From eight lines of action to 2 lines; quite an improvement. There is another way to do it using a while loop<br/>
+<br/>
+<b>Assignment:</b> Assignment 2<br/>
+<br/>
+<div align="center"><img src="PyIntro1A/loopwhile3.jpg"/></div><br/>
+<br/>
+<a href="page://__813192cc-8f8d-4468-b845-75f95d40e4f0/#loopwhile3">src</a><br/>
+<br/>
+This time, the value of n would get printed in the shell window as each line gets drawn on the graphics window. <br/>
+The while loop can be written in another way in which the test condition is checked at the end; it is similar to the do ... while loop in other languages:<br/>
+<br/>
+<div align="center"><img src="PyIntro1A/dowhile4.jpg"/></div><br/>
+<br/>
+<a href="page://__813192cc-8f8d-4468-b845-75f95d40e4f0/#dowhile4">src</a><br/>
+<br/>
+<b>Assignment:</b> Assignment 3<br/>
+<h3>Choice</h3>
+<br/>
+A computer program would executes one line after another starting from the top and grinding its way to the bottom unless it is hit with a decision statement. At a decision point, code branches into one of the possible directions depending on the current state of the program.  But before running into a choice, let us first learn a little bit about how to generate random integers in python:<br/>
+<br/>
+<div align="center"><img src="PyIntro1A/choicerand5.jpg"/></div><br/>
+<br/>
+<a href="page://__813192cc-8f8d-4468-b845-75f95d40e4f0/#choicerand5">src</a><br/>
+<br/>
+<b>Assignment:</b> Assignment 4<br/>
+<br/>
+Run the above code over and over again by repeatedly clicking the green button (you do not have to clear code for this example; just keep running the same code over and over again).  As you run the program, each time a new random number in the (inclusive) range [1,9] appears in the output (like 2,1,3,3,6,1,3,9...). We would now use the random number to draw a colored square, where the sides of the box would be colored by a randomly chosen number such that 1 ↦ red, 2 ↦  green, 3 ↦  blue. <br/>
+<br/>
+<div align="center"><img src="PyIntro1A/choicecolor6.jpg"/></div><br/>
+<br/>
+<a href="page://__813192cc-8f8d-4468-b845-75f95d40e4f0/#choicecolor6">src</a><br/>
+<br/>
+Run this programme a couple of times and verify that every time a new box is generated. The reset function called in the first line is a turtle function. It ensures that the turtle forgets its last state and will execute the following commands over a clean slate. <br/>
+<br/>
+<b>Assignment:</b> Assignment 5
+</div>
+
+
+</body></html>
